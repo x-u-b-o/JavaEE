@@ -5,45 +5,34 @@
 }
 
 body {
-	background-color: cyan;
+	background: url(./src/background.jpg) fixed ;
 }
 
 div.header {
-	display: block;
-	height: 60px;
-	background-color: greenyellow;
-	text-align: center;
-	font-size: 150%;
+	height: 200px;
 }
 
 div.header a {
-	text-decoration: none;
-	height: 100%;
-	float: left;
-}
-
-div.header a img {
-	height: 100%;
-	float: left;
-}
-
-div.header a h1 {
 	display: block;
-	float: left;
-	font-size: inherit;
-	padding: 10px;
+	height: 100%;
+	width: 960px;
+	background: url(./src/logo.jpg) no-repeat center;
+	text-decoration: none;
+	margin: auto;
 }
+
 
 div.center {
 	height: 800px;
 	width: 70%;
-	background-color: pink;
 	margin: auto;
 	text-align: center;
 	position: relative;
 	top: 20px;
 }
-
+div.column{
+	background: url(./src/background.jpg);
+}
 div#column1 {
 	position: absolute;
 	top: 25%;
