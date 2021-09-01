@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="login.css" />
+	</head>
+	<body>
+		<div class="header">
+			<a href="#"></a>
+		</div>
+		<div>
+			<div class="center">
+				<h2 id="writeInfo">请填写个人信息</h2>
+				<form name="infoOfPatient" action="#">
+					<div class="write">
+						<span class="formHead">姓名:</span><input type="text" name="name"><br>
+					</div>
+					<div class="write">
+						<span class="formHead">性别:</span>
+						<label id="man"><input type="radio" name="sex" value="male" checked> 男 </label>
+						<label id="woman"><input type="radio" name="sex" value="female"> 女 </label><br>
+					</div>
+					<div class="write">
+						<span class="formHead">出生日期:</span><input type="date" name="dateOfBirth"><br>
+					</div>
+					<div class="write">
+						<span class="formHead">身份证号码:</span><input type="text" name="id"><br>
+					</div>
+					<div class="write">
+						<span class="formHead">手机号码:</span><input type="text" name="tel"><br>
+					</div>
+					<div class="write">
+						<span class="formHead">科室选择:</span><select name="科室">
+							<option value="surgery">外科</option>
+							<option value="internalMedicine">内科</option>
+							<option value="pediatrics">儿科</option>
+							<option value="dermatology">皮肤科</option>
+							<option value="facialFeatures">五官科</option>
+						</select>
+					</div>
+					<input  type="submit" value="提交">
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>

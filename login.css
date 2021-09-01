@@ -1,0 +1,211 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: auto;
+}
+
+td {
+	border: 1px solid black;
+	height: 40px;
+}
+
+th {
+	border: 1px solid black;
+	height: 40px;
+	width: 80px;
+}
+
+body {
+	background: url(./src/background.jpg) fixed;
+}
+
+div.header {
+	height: 200px;
+}
+
+div.header a {
+	display: block;
+	height: 100%;
+	width: 960px;
+	background: url(./src/logo.jpg) no-repeat center;
+	text-decoration: none;
+	margin: auto;
+}
+
+
+div.center {
+	height: 720px;
+	width: 50%;
+	padding: 10px 10px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 20px;
+	background-color: #CCCCCC;
+}
+
+div.column {
+	background: url(./src/background.jpg);
+}
+
+div#column1 {
+	position: absolute;
+	top: 25%;
+	left: 7.5%;
+	background-color: beige;
+	height: 40%;
+	width: 40%;
+}
+
+div#column2 {
+	position: absolute;
+	top: 25%;
+	right: 7.5%;
+	background-color: beige;
+	height: 40%;
+	width: 40%;
+}
+
+div.column a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	font-size: 150%;
+}
+
+div.column a span {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+div.center h2#writeInfo,
+div.center h2#patientInfo {
+	display: block;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+div.center h2#chooseDoctor{
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+
+div.write {
+	height: 30px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+input:focus {
+	background-color: lightblue;
+}
+
+select:focus {
+	background-color: lightblue;
+}
+
+div.center input[type=text],
+div.center input[type=password] {
+	width: 60%;
+	height: 20px;
+	padding: 14px 24px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	float: left;
+}
+
+div.center input[type=date],
+div.center select {
+	width: 60%;
+	height: 30px;
+	padding: 0px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	float: left;
+}
+
+div.center label#man,
+div.center label#woman {
+	width: 30%;
+	height: 30px;
+	padding: 0px 20px;
+	float: left;
+	text-align: left;
+}
+
+div.center input[type=radio] {
+	width: 50%;
+	height: 30px;
+	padding: 0px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	float: left;
+}
+
+input[type=submit] {
+	width: 50%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin-top: 50px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+div.center span.formHead {
+	line-height: 30px;
+	width: 30%;
+	display: inline-block;
+	float: left;
+	font-size: 20px;
+}
+
+ul {
+	height: 70px;
+}
+
+li {
+	list-style: none;
+	float: left;
+}
+
+ul.chooseDate li button {
+	display: block;
+	height: 30px;
+	width: 100px;
+	margin: 20px;
+	background-color: white;
+}
+
+div.doctorBox {
+	height: 600px;
+	width: 100%;
+	overflow-y: auto;
+}
+
+div.doctorInfo {
+	margin: 10px;
+	height: 200px;
+	background-color: #ADD8E6;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="login.css" />
+	</head>
+	<body>
+		<div class="header">
+			<a href="#"></a>
+		</div>
+		<div>
+			<div class="center">
+				<h2 id="chooseDoctor">请选择就诊时间和医生</h2>
+				<ul class="chooseDate">
+					<li><button id="today" type="button" onclick="chooseDate(this.id)"></button></li>
+					<li><button id="tomorrow" type="button" onclick="chooseDate(this.id)"></button></li>
+					<li><button id="dayAfterTomorrow" type="button" onclick="chooseDate(this.id)"></button></li>
+				</ul>
+				<div class="doctorBox">
+					<div class="doctorInfo">
+
+					</div>
+					<div class="doctorInfo">
+
+					</div>
+					<div class="doctorInfo">
+
+					</div>
+					<div class="doctorInfo">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var today = new Date();
+			document.getElementById("today").innerHTML = today.getMonth() + 1 + "月" + today.getDate() + "日";
+			var tomorrow = new Date();
+			tomorrow.setDate(today.getDate() + 1);
+			document.getElementById("tomorrow").innerHTML = tomorrow.getMonth() + 1 + "月" + tomorrow.getDate() + "日";
+			var dayAfterTomorrow = new Date();
+			dayAfterTomorrow.setDate(tomorrow.getDate() + 1);
+			document.getElementById("dayAfterTomorrow").innerHTML = dayAfterTomorrow.getMonth() + 1 + "月" + dayAfterTomorrow
+				.getDate() + "日";
+
+			function chooseDate(id) {
+				for (x = 0; x < document.getElementsByTagName("button").length; x++) {
+					document.getElementsByTagName("button")[x].style.background = "white";
+				}
+				document.getElementById(id).style.background = "gray";
+			}
+		</script>
+	</body>
+</html>
