@@ -6,31 +6,32 @@
 		<link rel="stylesheet" type="text/css" href="login.css" />
 	</head>
 	<body>
+		<button type="button" class="return" onclick="window.location.href ='上一个页面'">返回</button>
 		<div class="header">
 			<a href="#"></a>
 		</div>
 		<div class="center">
-				<h2 id="writeInfo">请输入个人信息来查询</h2>
-				<form name="infoOfPatient" action="#">
-					<div class="write">
-						<span class="formHead">姓名:</span><input type="text" name="name"><br>
-					</div>
-					<div class="write">
-						<span class="formHead">身份证号码:</span><input type="text" name="id"><br>
-					</div>
-					<div class="write">
-						<span class="formHead">科室选择:</span><select name="科室">
-							<option value="surgery">外科</option>
-							<option value="internalMedicine">内科</option>
-							<option value="pediatrics">儿科</option>
-							<option value="dermatology">皮肤科</option>
-							<option value="facialFeatures">五官科</option>
-						</select>
-					</div>
-					<input  type="submit" value="提交">
-				</form>
-			</div>
+			<h2 id="writeInfo">请输入个人信息来查询</h2>
+			<form name="infoOfPatient" action="#">
+				<div class="write">
+					<span class="formHead">姓名:</span><input type="text" name="name"><br>
+				</div>
+				<div class="write">
+					<span class="formHead">身份证号码:</span><input type="text" name="id"><br>
+				</div>
+				<div class="write">
+					<span class="formHead">科室选择:</span><select name="科室">
+						<option value="surgery">外科</option>
+						<option value="internalMedicine">内科</option>
+						<option value="pediatrics">儿科</option>
+						<option value="dermatology">皮肤科</option>
+						<option value="facialFeatures">五官科</option>
+					</select>
+				</div>
+				<input type="submit" value="提交">
+			</form>
 		</div>
-		
+		</div>
+
 	</body>
 </html>
